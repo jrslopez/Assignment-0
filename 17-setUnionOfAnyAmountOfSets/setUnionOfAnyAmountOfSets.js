@@ -1,5 +1,12 @@
 function setUnionOfAnyAmountOfSets(...args) {
-  // Insert code here;
+  const result = new Set();
+  for (let x in arguments)
+  {
+    for (let y of arguments[x]){
+      result.add(y);
+    }
+  }
+  return result;
 }
 
 // Do not edit this line;
